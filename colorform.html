@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #333; /* Dark text for readability */
+        }
+        fieldset {
+            background-color: #f0d824;
+            border: 2px solid #4CAF50; /* Green border */
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        legend {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #4CAF50; /* Green text for the legend */
+        }
+        label {
+            display: inline-block;
+            width: 150px;
+        }
+        input[type="submit"] {
+            margin-top: 10px;
+            background-color: #1e2ceb; /* Green background */
+            color: rgb(233, 24, 24);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #ff0519; /* Darker green on hover */
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"] {
+            padding: 5px;
+            border: 1px solid #e31010;
+            border-radius: 5px;
+            width: calc(100% - 170px); /* Ensure input fields align with labels */
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend id="legend">Application Form</legend>
+            <br>
+
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" class="text">
+            <br><br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name">
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob">
+            <br><br>
+
+            Gender:
+            <input type="radio" name="gender" value="male" id="male">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <label for="female">Female</label>
+            <br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age">
+            <br><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email">
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password">
+            <br><br>
+
+            <label>Position Available:</label>
+            <br>
+            <input type="checkbox" id="java" value="java">
+            <label for="java">Java</label>
+            <br>
+            <input type="checkbox" id="python" value="python">
+            <label for="python">Python</label>
+            <br>
+            <input type="checkbox" id="aiml" value="aiml">
+
+            <label for="aiml">AIML</label>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
